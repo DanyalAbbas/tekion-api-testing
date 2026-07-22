@@ -1,0 +1,5199 @@
+{
+  "data": [
+    {
+      "creationTime": 1767725256891,
+      "vehicles": [
+        {
+          "last8DigitVIN": "KFA12349",
+          "year": "2024",
+          "vin": "1FTEW1E45KFA12349",
+          "model": "F-150",
+          "vehicleId": "f55c0028-865e-49f8-a304-a546a7139147",
+          "make": "Ford"
+        }
+      ],
+      "id": "0de752da-77d3-4450-bccd-55db58036bbc",
+      "displayId": "398081",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15559998888",
+              "localNumber": "5559998888"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": 1893456000000,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": "DL12345678",
+          "issueDate": 1577836800000
+        },
+        "customerType": "INDIVIDUAL",
+        "addresses": [
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "Austin",
+              "STATE": "TX",
+              "COUNTY": "Travis"
+            },
+            "current": false,
+            "addressType": "SHIPPING_ADDRESS",
+            "postalCode": "78701",
+            "addressLine1": "123 Main St",
+            "addressLine2": "Apt 123",
+            "id": "9a86248d-8932-4cab-8ba2-9bdad4647b22"
+          },
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "Austin",
+              "STATE": "TX",
+              "COUNTY": null
+            },
+            "current": false,
+            "addressType": "BILLING_ADDRESS",
+            "postalCode": "78701",
+            "addressLine1": "456 Finance Rd",
+            "addressLine2": null,
+            "id": "e3b0e99f-81b6-4c1c-be94-783896f7164c"
+          }
+        ],
+        "postalEmailCommunications": [
+          {
+            "customerId": "0de752da-77d3-4450-bccd-55db58036bbc",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.doe@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15559998888",
+              "localNumber": "5559998888"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "prefix": "Mr",
+          "middleName": "Motive",
+          "suffix": "Jr"
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1782306198466
+    },
+    {
+      "creationTime": 1777933444773,
+      "vehicles": [
+        {
+          "last8DigitVIN": "HG502779",
+          "year": "2017",
+          "vin": "3GTU2NEC7HG502779",
+          "model": "Sierra 1500",
+          "vehicleId": "8b92e77a-831c-11eb-8000-000000000000",
+          "make": "GMC"
+        }
+      ],
+      "id": "3ac7963c-ed77-44e9-975a-ec362e6d2934",
+      "displayId": "407684",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "3ac7963c-ed77-44e9-975a-ec362e6d2934",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.doe@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1782306198466
+    },
+    {
+      "creationTime": 1769026222438,
+      "vehicles": [
+        {
+          "last8DigitVIN": "KFA12345",
+          "year": "2024",
+          "vin": "1FTEW1E45KFA12345",
+          "model": "F-150",
+          "vehicleId": "a080821e-bfff-4f8b-bfbd-c15f7fcd4d12",
+          "make": "Ford"
+        }
+      ],
+      "id": "78622ede-9ec1-4272-ace1-875d82fde03b",
+      "displayId": "399036",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": 1893456000000,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": "DL12345678",
+          "issueDate": 1577836800000
+        },
+        "customerType": "INDIVIDUAL",
+        "addresses": [
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "Austin",
+              "STATE": "TX",
+              "COUNTY": "Travis"
+            },
+            "current": false,
+            "addressType": "SHIPPING_ADDRESS",
+            "postalCode": "78701",
+            "addressLine1": "123 Main St",
+            "addressLine2": "Apt 4B",
+            "id": "aa4814ae-9ef5-4b18-84c1-3ef4d73836b6"
+          }
+        ],
+        "postalEmailCommunications": [
+          {
+            "customerId": "78622ede-9ec1-4272-ace1-875d82fde03b",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.doe@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "prefix": "Mr",
+          "middleName": "Quincy",
+          "suffix": "Jr"
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1782306198466
+    },
+    {
+      "creationTime": 1764026645816,
+      "id": "bb9361ca-4915-417e-898e-ae69c668ae90",
+      "displayId": "396601",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15559998888",
+              "localNumber": "5559998888"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": 1893456000000,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": "DL12345678",
+          "issueDate": 1577836800000
+        },
+        "customerType": "INDIVIDUAL",
+        "addresses": [
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "Austin",
+              "STATE": "TX",
+              "COUNTY": "Travis"
+            },
+            "current": false,
+            "addressType": "SHIPPING_ADDRESS",
+            "postalCode": "78701",
+            "addressLine1": "123 Main St",
+            "addressLine2": "Apt 123",
+            "id": "0d870e02-6fdc-4d62-999f-7d3f784ac23f"
+          },
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "Austin",
+              "STATE": "TX",
+              "COUNTY": null
+            },
+            "current": false,
+            "addressType": "BILLING_ADDRESS",
+            "postalCode": "78701",
+            "addressLine1": "456 Finance Rd",
+            "addressLine2": null,
+            "id": "62bd7997-91d5-4f12-be7f-060f66b3dab6"
+          }
+        ],
+        "postalEmailCommunications": [
+          {
+            "customerId": "bb9361ca-4915-417e-898e-ae69c668ae90",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.doe@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15559998888",
+              "localNumber": "5559998888"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "prefix": "Mr",
+          "middleName": "Motive",
+          "suffix": "Jr"
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1782306198466
+    },
+    {
+      "creationTime": 1777933404334,
+      "vehicles": [
+        {
+          "last8DigitVIN": "HG502779",
+          "year": "2017",
+          "vin": "3GTU2NEC7HG502779",
+          "model": "Sierra 1500",
+          "vehicleId": "8b92e77a-831c-11eb-8000-000000000000",
+          "make": "GMC"
+        }
+      ],
+      "id": "d093419e-a830-4298-8e9f-ef00e7399bb9",
+      "displayId": "407683",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "d093419e-a830-4298-8e9f-ef00e7399bb9",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.doe@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1782306198466
+    },
+    {
+      "creationTime": 1769433281381,
+      "vehicles": [
+        {
+          "last8DigitVIN": "KFA12345",
+          "year": "2024",
+          "vin": "1FTEW1E45KFA12345",
+          "model": "F-150",
+          "vehicleId": "a080821e-bfff-4f8b-bfbd-c15f7fcd4d12",
+          "make": "Ford"
+        },
+        {
+          "last8DigitVIN": "KFA12349",
+          "year": "2024",
+          "vin": "1FTEW1E45KFA12349",
+          "model": "F-150",
+          "vehicleId": "f55c0028-865e-49f8-a304-a546a7139147",
+          "make": "Ford"
+        }
+      ],
+      "id": "e80a38ff-02c3-4c16-bd51-18ebcba2ac19",
+      "displayId": "399149",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15559998888",
+              "localNumber": "5559998888"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": 1893456000000,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": "DL12345678",
+          "issueDate": 1577836800000
+        },
+        "customerType": "INDIVIDUAL",
+        "addresses": [
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "Austin",
+              "STATE": "TX",
+              "COUNTY": "Travis"
+            },
+            "current": false,
+            "addressType": "SHIPPING_ADDRESS",
+            "postalCode": "78701",
+            "addressLine1": "123 Main St",
+            "addressLine2": "Apt 123",
+            "id": "8ffb1d69-6e54-4590-b309-3bab76a4ed7d"
+          },
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "Austin",
+              "STATE": "TX",
+              "COUNTY": null
+            },
+            "current": false,
+            "addressType": "BILLING_ADDRESS",
+            "postalCode": "78701",
+            "addressLine1": "456 Finance Rd",
+            "addressLine2": null,
+            "id": "f496540d-1fb2-44c6-a653-2a2ca9549167"
+          }
+        ],
+        "postalEmailCommunications": [
+          {
+            "customerId": "e80a38ff-02c3-4c16-bd51-18ebcba2ac19",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.doe@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15559998888",
+              "localNumber": "5559998888"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "Doe",
+          "prefix": "Mr",
+          "middleName": "Motive",
+          "suffix": "Jr"
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1782306198466
+    },
+    {
+      "creationTime": 1764086377719,
+      "vehicles": [
+        {
+          "last8DigitVIN": "ER271114",
+          "year": "2014",
+          "vin": "3FA6P0K9XER271114",
+          "model": "Fusion",
+          "vehicleId": "d8ea3a27-4e08-417c-9d15-586f1febfec5",
+          "make": "Ford"
+        },
+        {
+          "last8DigitVIN": "7X093105",
+          "year": "2007",
+          "vin": "5TFMV52157X093105",
+          "model": "Tundra",
+          "vehicleId": "d86a6c70-d0fe-4a4f-a807-7e33dce281e6",
+          "make": "Toyota"
+        }
+      ],
+      "id": "11025716-1ec7-44b1-b781-18d067f1f59f",
+      "displayId": "396672",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+11236897546",
+              "localNumber": "1236897546"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+11232112287",
+              "localNumber": "1232112287"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "addresses": [
+          {
+            "country": "United States",
+            "geoDetails": {
+              "COUNTY": null
+            },
+            "current": false,
+            "addressType": "SHIPPING_ADDRESS",
+            "postalCode": null,
+            "addressLine1": null,
+            "addressLine2": null,
+            "id": "32323e97-ae21-4a78-89b7-084d9eaef0b2"
+          },
+          {
+            "country": "United States",
+            "geoDetails": {
+              "CITY": "San Francisco",
+              "STATE": "California",
+              "COUNTY": null
+            },
+            "current": false,
+            "addressType": "BILLING_ADDRESS",
+            "postalCode": "94102",
+            "addressLine1": "123 Main Street",
+            "addressLine2": null,
+            "id": "86f1d76a-e8b8-488b-a9a8-f00278d12b38"
+          },
+          {
+            "country": "United States of America ",
+            "geoDetails": {
+              "CITY": "Pleasanton",
+              "STATE": "CA",
+              "COUNTY": "CA"
+            },
+            "current": false,
+            "addressType": "BILLING_ADDRESS",
+            "postalCode": "94588",
+            "addressLine1": "6250 Stoneridge Mall Rd",
+            "addressLine2": null,
+            "id": "e97db5e9-ad11-4f2a-adf3-dab9994a603b"
+          }
+        ],
+        "postalEmailCommunications": [
+          {
+            "customerId": "11025716-1ec7-44b1-b781-18d067f1f59f",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.smith@email.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+11236897546",
+              "localNumber": "1236897546"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+11232112287",
+              "localNumber": "1232112287"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "Smith",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1780327909614
+    },
+    {
+      "creationTime": 1777451632584,
+      "id": "2a26533d-c43e-457f-a67b-218751bfae4a",
+      "displayId": "407537",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "2a26533d-c43e-457f-a67b-218751bfae4a",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testing-preview@aftersales.aws.porsche.cloud"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Tekion",
+          "lastName": "Integration",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1778225640272
+    },
+    {
+      "creationTime": 1777450880746,
+      "id": "6d530d6e-158b-4bb6-9613-fc4c246ca488",
+      "displayId": "407529",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "6d530d6e-158b-4bb6-9613-fc4c246ca488",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testing-preview@aftersales.aws.porsche.cloud"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Tekion",
+          "lastName": "Integration",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1778225640272
+    },
+    {
+      "creationTime": 1778224944675,
+      "id": "b99de27a-9a85-4b01-a9ec-7b9d035b6c38",
+      "displayId": "407787",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "b99de27a-9a85-4b01-a9ec-7b9d035b6c38",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testing-preview@aftersales.aws.porsche.cloud"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Tekion",
+          "lastName": "Integration",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1778225640272
+    },
+    {
+      "creationTime": 1777451098900,
+      "id": "baa36795-82c4-4257-8671-0726dbe86e9c",
+      "displayId": "407533",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "baa36795-82c4-4257-8671-0726dbe86e9c",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testing-preview@aftersales.aws.porsche.cloud"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Tekion",
+          "lastName": "Integration",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1778225640272
+    },
+    {
+      "creationTime": 1778225639675,
+      "id": "3858d58c-331d-40d5-9fbb-85a5d1595db0",
+      "displayId": "407788",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "3858d58c-331d-40d5-9fbb-85a5d1595db0",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testing-preview@aftersales.aws.porsche.cloud"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Tekion",
+          "lastName": "Integration",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1778225639761
+    },
+    {
+      "creationTime": 1777498210445,
+      "id": "dc3a34d4-ed21-4728-836e-bb31c9165bf4",
+      "displayId": "407590",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "dc3a34d4-ed21-4728-836e-bb31c9165bf4",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "jane.testington@podiumtest.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Jane",
+          "lastName": "Testington",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1777498574165
+    },
+    {
+      "creationTime": 1777498154868,
+      "id": "cfc5338b-5105-4486-ba2b-e24ab94dfaf5",
+      "displayId": "407589",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "cfc5338b-5105-4486-ba2b-e24ab94dfaf5",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "jane.testington@podiumtest.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Jane",
+          "lastName": "Testington",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1777498154926
+    },
+    {
+      "creationTime": 1777497645172,
+      "vehicles": [
+        {
+          "last8DigitVIN": "MN109186",
+          "year": "2004",
+          "vin": "1HGBH41JXMN109186",
+          "model": "Elantra",
+          "vehicleId": "b165ec16-32be-11ea-8000-000000000000",
+          "make": "Hyundai"
+        }
+      ],
+      "id": "ec9af5f5-bffc-4c94-b0a4-0165b38c87c9",
+      "displayId": "407588",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "ec9af5f5-bffc-4c94-b0a4-0165b38c87c9",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "jane.testington@podiumtest.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Jane",
+          "lastName": "Testington",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1777497756582
+    },
+    {
+      "creationTime": 1776165885235,
+      "id": "9d182ded-90cf-43d3-a4c7-ed7efab8e8a5",
+      "displayId": "405159",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "9d182ded-90cf-43d3-a4c7-ed7efab8e8a5",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "5551234567"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": null,
+          "lastName": "DifLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1776166113938
+    },
+    {
+      "creationTime": 1776165602593,
+      "id": "5ecc145d-501d-485d-9c67-6298506c31a9",
+      "displayId": "405158",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "5ecc145d-501d-485d-9c67-6298506c31a9",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "5551234567"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": null,
+          "lastName": "DifLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1776165602686
+    },
+    {
+      "creationTime": 1776165374264,
+      "id": "3ea946d1-6266-401c-bfc4-14c7cd936f3b",
+      "displayId": "405157",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "3ea946d1-6266-401c-bfc4-14c7cd936f3b",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "5551234567"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": null,
+          "lastName": "DifLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1776165374360
+    },
+    {
+      "creationTime": 1776098772191,
+      "id": "cbac34e1-43a3-4dc2-b0e2-dfce0ac0919c",
+      "displayId": "405143",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "cbac34e1-43a3-4dc2-b0e2-dfce0ac0919c",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "5551234567"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": null,
+          "lastName": "DifLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1776098772293
+    },
+    {
+      "creationTime": 1776098575870,
+      "id": "1ebf1386-ce9b-4d47-928b-5e6be1b98311",
+      "displayId": "405142",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "1ebf1386-ce9b-4d47-928b-5e6be1b98311",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "5551234567"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": null,
+          "lastName": "DifLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1776098575972
+    },
+    {
+      "creationTime": 1775073162915,
+      "vehicles": [
+        {
+          "last8DigitVIN": "JF556622",
+          "year": "2018",
+          "vin": "1G1ZE5SX5JF556622",
+          "model": "MALIBU",
+          "vehicleId": "90d3923b-10f1-4a39-a60d-73942be2a820",
+          "make": "CHEVROLET"
+        }
+      ],
+      "id": "732d6af1-65d6-47de-9a11-5ba1136d3d4d",
+      "displayId": "404653",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "732d6af1-65d6-47de-9a11-5ba1136d3d4d",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "test@impel.io"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Test",
+          "lastName": "Impel",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1775073162975
+    },
+    {
+      "creationTime": 1775073124736,
+      "vehicles": [
+        {
+          "last8DigitVIN": "JF556622",
+          "year": "2018",
+          "vin": "1G1ZE5SX5JF556622",
+          "model": "MALIBU",
+          "vehicleId": "90d3923b-10f1-4a39-a60d-73942be2a820",
+          "make": "CHEVROLET"
+        }
+      ],
+      "id": "43c26aa8-7bae-468d-a162-2e79cabfc5c5",
+      "displayId": "404652",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "43c26aa8-7bae-468d-a162-2e79cabfc5c5",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "test@impel.io"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Test",
+          "lastName": "Impel",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1775073124795
+    },
+    {
+      "creationTime": 1775072779857,
+      "vehicles": [
+        {
+          "last8DigitVIN": "JF556622",
+          "year": "2018",
+          "vin": "1G1ZE5SX5JF556622",
+          "model": "MALIBU",
+          "vehicleId": "90d3923b-10f1-4a39-a60d-73942be2a820",
+          "make": "CHEVROLET"
+        }
+      ],
+      "id": "5172ce93-aa09-4824-8d08-b4533fb7b1ad",
+      "displayId": "404651",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "5172ce93-aa09-4824-8d08-b4533fb7b1ad",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "test@impel.io"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Test",
+          "lastName": "Impel",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1775072779962
+    },
+    {
+      "creationTime": 1775063925756,
+      "vehicles": [
+        {
+          "last8DigitVIN": "JF556622",
+          "year": "2018",
+          "vin": "1G1ZE5SX5JF556622",
+          "model": "MALIBU",
+          "vehicleId": "90d3923b-10f1-4a39-a60d-73942be2a820",
+          "make": "CHEVROLET"
+        }
+      ],
+      "id": "53e02308-441e-4d4c-8739-4615324a987f",
+      "displayId": "404650",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "53e02308-441e-4d4c-8739-4615324a987f",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "test@impel.io"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Test",
+          "lastName": "Impel",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1775063925811
+    },
+    {
+      "creationTime": 1774639400364,
+      "vehicles": [
+        {
+          "last8DigitVIN": "JF556622",
+          "year": "2018",
+          "vin": "1G1ZE5SX5JF556622",
+          "model": "MALIBU",
+          "vehicleId": "90d3923b-10f1-4a39-a60d-73942be2a820",
+          "make": "CHEVROLET"
+        }
+      ],
+      "id": "a9df9cac-e017-4ddf-b2cf-d7dd7243a480",
+      "displayId": "404497",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "a9df9cac-e017-4ddf-b2cf-d7dd7243a480",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "e2etest@impel.ai"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "E2E",
+          "lastName": "TestUser",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774639471976
+    },
+    {
+      "creationTime": 1774545597627,
+      "vehicles": [
+        {
+          "last8DigitVIN": "JF556622",
+          "year": "2018",
+          "vin": "1G1ZE5SX5JF556622",
+          "model": "MALIBU",
+          "vehicleId": "90d3923b-10f1-4a39-a60d-73942be2a820",
+          "make": "CHEVROLET"
+        }
+      ],
+      "id": "c8a8647c-f40e-4145-b565-1571ab63b36a",
+      "displayId": "404403",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "c8a8647c-f40e-4145-b565-1571ab63b36a",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "test@impel.ai"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Test",
+          "lastName": "Impel",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774545626194
+    },
+    {
+      "creationTime": 1774354892936,
+      "id": "82b10b4f-15d9-4a9a-ae9f-f55c0a4bf123",
+      "displayId": "404277",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "82b10b4f-15d9-4a9a-ae9f-f55c0a4bf123",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "CoBuyerFirst",
+          "lastName": "CoBuyerLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354892981
+    },
+    {
+      "creationTime": 1774354885337,
+      "id": "a7968d09-dc9e-4aff-b2a0-c9f6c9466d6e",
+      "displayId": "404273",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "a7968d09-dc9e-4aff-b2a0-c9f6c9466d6e",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "CoBuyerFirst",
+          "lastName": "CoBuyerLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354885378
+    },
+    {
+      "creationTime": 1774354872972,
+      "id": "e878908b-d33a-47f5-8e7d-c75b83498a89",
+      "displayId": "404271",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "e878908b-d33a-47f5-8e7d-c75b83498a89",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "CoBuyerFirst",
+          "lastName": "CoBuyerLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354873014
+    },
+    {
+      "creationTime": 1774354865044,
+      "id": "a5c1ed0d-2c74-4131-8fad-696c5135ebbe",
+      "displayId": "404268",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "a5c1ed0d-2c74-4131-8fad-696c5135ebbe",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "VerifyFirst",
+          "lastName": "VerifyLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354869210
+    },
+    {
+      "creationTime": 1774354845766,
+      "id": "05b8721e-ba0f-4db3-889d-364499a4afb3",
+      "displayId": "404264",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "05b8721e-ba0f-4db3-889d-364499a4afb3",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "UpdatedFirst",
+          "lastName": "UpdatedLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354849478
+    },
+    {
+      "creationTime": 1774354836521,
+      "id": "da5fe8a3-a484-46f1-900a-4601edb65286",
+      "displayId": "404259",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "da5fe8a3-a484-46f1-900a-4601edb65286",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "updated-test@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "CoBuyerFirst",
+          "lastName": "CoBuyerLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354840147
+    },
+    {
+      "creationTime": 1774354826714,
+      "id": "e21b708c-d968-4105-9652-15d1a7e0526f",
+      "displayId": "404256",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "addresses": [
+          {
+            "country": "US",
+            "geoDetails": {
+              "CITY": "NewCity",
+              "STATE": "NY",
+              "COUNTY": null
+            },
+            "current": true,
+            "addressType": "BILLING_ADDRESS",
+            "postalCode": "10001",
+            "addressLine1": "456 Updated St",
+            "addressLine2": null,
+            "id": "b9ffd934-fe43-4931-9f5f-1933dcc58976"
+          }
+        ],
+        "postalEmailCommunications": [
+          {
+            "customerId": "e21b708c-d968-4105-9652-15d1a7e0526f",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "CoBuyerFirst",
+          "lastName": "CoBuyerLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354830569
+    },
+    {
+      "creationTime": 1774354809844,
+      "id": "47f733c6-022d-4350-b2b3-0d17f1372f59",
+      "displayId": "404252",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "47f733c6-022d-4350-b2b3-0d17f1372f59",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "CoBuyerFirst",
+          "lastName": "CoBuyerLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354809888
+    },
+    {
+      "creationTime": 1774354791573,
+      "id": "3bce808c-ab09-428e-b51d-cd65373a6c01",
+      "displayId": "404248",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "3bce808c-ab09-428e-b51d-cd65373a6c01",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "cobuyer-test@regression.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "CoBuyerFirst",
+          "lastName": "CoBuyerLast",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1774354791615
+    },
+    {
+      "creationTime": 1770272409920,
+      "id": "cbb3e965-efa7-444e-9c4c-73615f36f2a6",
+      "displayId": "399705",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "cbb3e965-efa7-444e-9c4c-73615f36f2a6",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testapi@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "TestAPI",
+          "lastName": "Customer",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1770272409959
+    },
+    {
+      "creationTime": 1770272372342,
+      "id": "6f0998e6-39b6-457b-9dad-bed116d22d7a",
+      "displayId": "399704",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "6f0998e6-39b6-457b-9dad-bed116d22d7a",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testapi@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "TestAPI",
+          "lastName": "Customer",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1770272372361
+    },
+    {
+      "creationTime": 1770272348577,
+      "id": "16d5a42e-078c-4f58-9985-67cac3ed3eda",
+      "displayId": "399703",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "16d5a42e-078c-4f58-9985-67cac3ed3eda",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testapi@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "TestAPI",
+          "lastName": "Customer",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1770272348623
+    },
+    {
+      "creationTime": 1770272326444,
+      "id": "c13adea2-ca03-4ac9-ad9f-c951e72ab839",
+      "displayId": "399702",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "c13adea2-ca03-4ac9-ad9f-c951e72ab839",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testapi@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "TestAPI",
+          "lastName": "Customer",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1770272326499
+    },
+    {
+      "creationTime": 1769434231030,
+      "vehicles": [
+        {
+          "last8DigitVIN": "HF123456",
+          "year": "2017",
+          "vin": "1G1ZD5ST8HF123456",
+          "model": "Malibu",
+          "vehicleId": "72f60d66-0dd3-4fbc-8035-ed5a5cd69050",
+          "make": "Chevrolet"
+        }
+      ],
+      "id": "3ac72066-6978-41c0-b6a0-f2fadaa4f5dd",
+      "displayId": "399150",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15558889999",
+              "localNumber": "5558889999"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "3ac72066-6978-41c0-b6a0-f2fadaa4f5dd",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "kjames@xtime.com.ss"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15558889999",
+              "localNumber": "5558889999"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "James",
+          "lastName": "King",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1769581236629
+    },
+    {
+      "creationTime": 1769043141869,
+      "vehicles": [
+        {
+          "last8DigitVIN": "HF123456",
+          "year": "2017",
+          "vin": "1G1ZD5ST8HF123456",
+          "model": "Malibu",
+          "vehicleId": "72f60d66-0dd3-4fbc-8035-ed5a5cd69050",
+          "make": "Chevrolet"
+        }
+      ],
+      "id": "af1f99cc-c75c-4bcc-9f24-7a18b5490a36",
+      "displayId": "399042",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15558889999",
+              "localNumber": "5558889999"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "af1f99cc-c75c-4bcc-9f24-7a18b5490a36",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "kjames@xtime.com.ss"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15558889999",
+              "localNumber": "5558889999"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "James",
+          "lastName": "King",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1769581236629
+    },
+    {
+      "creationTime": 1761252655807,
+      "id": "b0b9a903-640e-4e95-a179-43b13f177c8b",
+      "displayId": "395046",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "b0b9a903-640e-4e95-a179-43b13f177c8b",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "testy@testman.org"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Testy",
+          "lastName": "McTestman",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1767073245705
+    },
+    {
+      "creationTime": 1753855751894,
+      "vehicles": [
+        {
+          "last8DigitVIN": "NU123456",
+          "year": "2022",
+          "vin": "4T1C11AK9NU123456",
+          "model": "Camry",
+          "vehicleId": "aa296bd0-61c9-4402-857b-06d79f5c860e",
+          "make": "Toyota"
+        }
+      ],
+      "id": "28607680-2ead-448c-b858-47a6507c3bc7",
+      "displayId": "391242",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "28607680-2ead-448c-b858-47a6507c3bc7",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.test.alt@email.com"
+          },
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "john.test.alt@email.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": -1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "TestCustomer",
+          "prefix": null,
+          "middleName": "Sample",
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1767046224785
+    },
+    {
+      "creationTime": 1762809712378,
+      "vehicles": [
+        {
+          "last8DigitVIN": "6P789651",
+          "year": "2006",
+          "vin": "1J4FA69S46P789651",
+          "model": "Wrangler",
+          "vehicleId": "9093b6d4-452f-4fd2-860f-11ca9d071cbb",
+          "make": "Jeep"
+        }
+      ],
+      "id": "dc16699d-89ca-4e11-8e81-f6808f26c522",
+      "displayId": "395961",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "dc16699d-89ca-4e11-8e81-f6808f26c522",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "n**************************9@e******.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Han",
+          "lastName": "S.",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1763505471581
+    },
+    {
+      "creationTime": 1762270549861,
+      "vehicles": [
+        {
+          "last8DigitVIN": "MN109999",
+          "year": "2020",
+          "vin": "1HGBH41JXMN109999",
+          "model": "Civic",
+          "vehicleId": "18b415ff-6068-47e4-b941-4b7a8ed72992",
+          "make": "Honda"
+        }
+      ],
+      "id": "0ce5e807-2231-4c40-8994-4dba0c1ee8cb",
+      "displayId": "395725",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "0ce5e807-2231-4c40-8994-4dba0c1ee8cb",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "new.appt.customer.1762228829@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "John",
+          "lastName": "NewCustomer",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1762809690446
+    },
+    {
+      "creationTime": 1762228247481,
+      "id": "9bbdddf5-f8ad-496c-841c-302571ce6a4e",
+      "displayId": "395692",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "9bbdddf5-f8ad-496c-841c-302571ce6a4e",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "test.customer.1762228246@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Test",
+          "lastName": "Customer",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1762228247567
+    },
+    {
+      "creationTime": 1759759302750,
+      "id": "82fd4d91-725f-4f40-b579-467e5c168d63",
+      "displayId": "394157",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": null,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": null,
+          "issueDate": null
+        },
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "82fd4d91-725f-4f40-b579-467e5c168d63",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            },
+            "email": "mark.smith@email.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Mark",
+          "lastName": "Smith",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1760818718107
+    },
+    {
+      "creationTime": 1757619204272,
+      "id": "7bb09aab-1e2f-47f2-98f8-0dc6f5d6597e",
+      "displayId": "393212",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "customerType": "INDIVIDUAL",
+        "postalEmailCommunications": [
+          {
+            "customerId": "7bb09aab-1e2f-47f2-98f8-0dc6f5d6597e",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "updated.customer@example.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "Updated",
+          "lastName": "Customer",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1757619353278
+    },
+    {
+      "creationTime": 1748971069593,
+      "id": "354f91e2-46fc-47ed-80c7-04a474707ff3",
+      "displayId": "387588",
+      "customerDetails": {
+        "phoneCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": true,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "license": {
+          "expiryDate": 1749061800000,
+          "placeOfIssue": null,
+          "issuingAuthority": null,
+          "documentId": "asdf",
+          "issueDate": 1748889000000
+        },
+        "customerType": "INDIVIDUAL",
+        "addresses": [
+          {
+            "country": null,
+            "geoDetails": {
+              "CITY": "Chandler",
+              "STATE": "AZ"
+            },
+            "current": true,
+            "addressType": "BILLING_ADDRESS",
+            "postalCode": "85226",
+            "addressLine1": "1234 Fake Street",
+            "addressLine2": null,
+            "id": "fc3c5065-99fc-4806-9626-6c335573819c"
+          }
+        ],
+        "postalEmailCommunications": [
+          {
+            "customerId": "354f91e2-46fc-47ed-80c7-04a474707ff3",
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "YES"
+              }
+            }
+          }
+        ],
+        "occupation": {
+          "current": true,
+          "period": {
+            "value": 13,
+            "timeUnit": "MONTH"
+          },
+          "employedBy": {
+            "address": {
+              "country": null,
+              "geoDetails": {
+                "CITY": "Chandler",
+                "STATE": "AZ"
+              },
+              "postalCode": "85226",
+              "addressLine1": "1234 Fake Street",
+              "addressLine2": null,
+              "id": null
+            },
+            "name": {
+              "locale": null,
+              "value": "Some place"
+            }
+          },
+          "title": null
+        },
+        "emailCommunications": [
+          {
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "YES",
+                "TRANSACTION": "YES"
+              }
+            },
+            "email": "iam@thebatman.com"
+          }
+        ],
+        "smsCommunications": [
+          {
+            "phoneType": "MOBILE",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+15551234567",
+              "localNumber": "5551234567"
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "HOME",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          },
+          {
+            "phoneType": "WORK",
+            "phone": {
+              "areaCode": null,
+              "countryCode": 1,
+              "completeNumber": "+1null",
+              "localNumber": null
+            },
+            "usagePreference": {
+              "preferred": false,
+              "preferenceMapping": {
+                "MARKETING": "NO",
+                "TRANSACTION": "NO"
+              }
+            }
+          }
+        ],
+        "name": {
+          "firstName": "bat",
+          "lastName": "man",
+          "prefix": null,
+          "middleName": null,
+          "suffix": null
+        }
+      },
+      "status": "ACTIVE",
+      "lastUpdateTime": 1748971069732
+    }
+  ],
+  "meta": {
+    "total": 49,
+    "pages": 1,
+    "nextFetchKey": null,
+    "count": 49,
+    "currentPage": 0,
+    "status": "success"
+  }
+}
