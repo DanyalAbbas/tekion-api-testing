@@ -14,7 +14,10 @@
     { "key": "ro_id", "value": "", "type": "string" },
     { "key": "rc_id", "value": "", "type": "string" },
     { "key": "appointment_id", "value": "", "type": "string" },
-    { "key": "transport_id", "value": "", "type": "string" }
+    { "key": "transport_id", "value": "", "type": "string" },
+    { "key": "shop_id", "value": "", "type": "string" },
+    { "key": "vin", "value": "", "type": "string" },
+    { "key": "next_fetch_key", "value": "", "type": "string" }
   ],
   "item": [
     {
@@ -395,10 +398,10 @@
     },
     {
       "name": "6. Service Appointments",
-      "description": "Service appointment operations — search and get",
+      "description": "Service appointment operations — slots, search, create, update, cancel (v3.1.0)",
       "item": [
         {
-          "name": "Search Appointments",
+          "name": "Appointment Slots",
           "request": {
             "method": "POST",
             "header": [
@@ -409,14 +412,14 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"filters\": [\n    { \"field\": \"status\", \"operator\": \"IN\", \"values\": [\"NEW\", \"IN_PROGRESS\"] },\n    { \"field\": \"appointmentDateTime\", \"operator\": \"BTW\", \"values\": [1768300800000, 1768905600000] }\n  ],\n  \"sort\": [\n    { \"field\": \"appointmentDateTime\", \"order\": \"DESC\" }\n  ],\n  \"pageSize\": 25\n}"
+              "raw": "{\n  \"shopId\": \"{{shop_id}}\",\n  \"startDate\": \"2024-01-26\",\n  \"endDate\": \"2024-01-31\",\n  \"opcodes\": [\"MPI\"]\n}"
             },
-            "url": { "raw": "{{base_url}}/v4.0.0/service-appointments:search", "host": ["{{base_url}}"], "path": ["v4.0.0", "service-appointments:search"] },
-            "description": "**Tier: Premium**\n\nSearch appointments with filters (status, shop, date range), text search, sorting, and pagination."
+            "url": { "raw": "{{base_url}}/v3.1.0/appointment-slots", "host": ["{{base_url}}"], "path": ["v3.1.0", "appointment-slots"] },
+            "description": "**Tier: Open**\n\nCheck available service appointment slots by shop, date range, and opcodes."
           }
         },
         {
-          "name": "Get Appointment by ID",
+          "name": "Search Appointments",
           "request": {
             "method": "GET",
             "header": [
@@ -425,8 +428,71 @@
               { "key": "Authorization", "value": "Bearer {{token}}" },
               { "key": "dealer_id", "value": "{{dealer_id}}" }
             ],
-            "url": { "raw": "{{base_url}}/v4.0.0/service-appointments/{{appointment_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "service-appointments", "{{appointment_id}}"] },
-            "description": "**Tier: Premium**\n\nGet appointment details by ID."
+            "url": {
+              "raw": "{{base_url}}/v3.1.0/appointments?id={{appointment_id}}&vin={{vin}}&customerId={{customer_id}}&nextFetchKey={{next_fetch_key}}",
+              "host": ["{{base_url}}"], "path": ["v3.1.0", "appointments"],
+              "query": [
+                { "key": "id", "value": "{{appointment_id}}", "description": "Appointment ID" },
+                { "key": "vin", "value": "{{vin}}", "description": "VIN filter" },
+                { "key": "customerId", "value": "{{customer_id}}", "description": "Customer ID filter" },
+                { "key": "nextFetchKey", "value": "{{next_fetch_key}}", "description": "Pagination token" }
+              ]
+            },
+            "description": "**Tier: Select**\n\nSearch appointments by ID, VIN, customer ID, or time range."
+          }
+        },
+        {
+          "name": "Create Appointment",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"shopId\": \"{{shop_id}}\",\n  \"appointmentDateTime\": 1644073200000,\n  \"customer\": {\n    \"id\": \"{{customer_id}}\",\n    \"firstName\": \"Ashu\",\n    \"lastName\": \"Arora\",\n    \"phones\": [{ \"phoneType\": \"MOBILE\", \"number\": \"0007795962\", \"isPrimary\": true }],\n    \"email\": \"ashu@example.com\"\n  },\n  \"vehicle\": {\n    \"vin\": \"3GTU2NEC7HG502779\",\n    \"year\": 2017,\n    \"make\": \"GMC\",\n    \"model\": \"Sierra 1500\"\n  }\n}"
+            },
+            "url": { "raw": "{{base_url}}/v3.1.0/appointments", "host": ["{{base_url}}"], "path": ["v3.1.0", "appointments"] },
+            "description": "**Tier: Premium**\n\nSchedule a new service appointment for a customer and vehicle."
+          }
+        },
+        {
+          "name": "Update Appointment",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"{{appointment_id}}\",\n  \"shopId\": \"{{shop_id}}\",\n  \"appointmentDateTime\": 1644073200000,\n  \"customer\": {\n    \"id\": \"{{customer_id}}\",\n    \"firstName\": \"Ashu\",\n    \"lastName\": \"Arora\"\n  },\n  \"vehicle\": {\n    \"vin\": \"3GTU2NEC7HG502779\",\n    \"year\": 2017,\n    \"make\": \"GMC\",\n    \"model\": \"Sierra 1500\"\n  }\n}"
+            },
+            "url": { "raw": "{{base_url}}/v3.1.0/appointments", "host": ["{{base_url}}"], "path": ["v3.1.0", "appointments"] },
+            "description": "**Tier: Premium**\n\nUpdate an existing service appointment details."
+          }
+        },
+        {
+          "name": "Cancel Appointment",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"{{appointment_id}}\",\n  \"cancelReason\": \"Customer requested rescheduling\",\n  \"donotNotifyCustomer\": false\n}"
+            },
+            "url": { "raw": "{{base_url}}/v3.1.0/appointments/cancel", "host": ["{{base_url}}"], "path": ["v3.1.0", "appointments", "cancel"] },
+            "description": "**Tier: Premium**\n\nCancel an existing service appointment."
           }
         }
       ]

@@ -317,19 +317,35 @@ detail = support_service.get_transportation_type("t-001")
 
 | Method | Endpoint | Tier |
 |--------|----------|------|
-| `search()` | `POST /v4.0.0/service-appointments:search` | Premium |
-| `get()` | `GET /v4.0.0/service-appointments/{id}` | Premium |
+| `get_slots()` | `POST /v3.1.0/appointment-slots` | Open |
+| `search()` | `GET /v3.1.0/appointments` | Select |
+| `create()` | `POST /v3.1.0/appointments` | Premium |
+| `update()` | `PUT /v3.1.0/appointments` | Premium |
+| `cancel()` | `POST /v3.1.0/appointments/cancel` | Premium |
 
 ```python
 from tekion_api.services.appointment import AppointmentService
 
-# Search appointments
-appointments = appt_service.search(filters=[{
-    "field": "status", "operator": "IN", "values": ["NEW", "IN_PROGRESS"]
-}])
+# Check available slots
+slots = appt_service.get_slots(
+    shop_id="shop-001", start_date="2024-01-26", end_date="2024-01-31",
+    make="GMC", model="Sierra 1500", opcodes=["MPI"],
+)
 
-# Get by ID
-appt = appt_service.get("appt-001")
+# Search appointments by VIN or customer
+appointments = appt_service.search(vin="3GTU2NEC7HG502779")
+
+# Create appointment
+appt_service.create(
+    shop_id="shop-001",
+    appointment_date_time=1644073200000,
+    customer={"id": "cust-001", "firstName": "Ashu", "lastName": "Arora",
+              "phones": [{"phoneType": "MOBILE", "number": "0007795962", "isPrimary": True}]},
+    vehicle={"vin": "3GTU2NEC7HG502779", "year": 2017, "make": "GMC", "model": "Sierra 1500"},
+)
+
+# Cancel
+appt_service.cancel("appt-001", cancel_reason="Customer rescheduled")
 ```
 
 ---
@@ -359,6 +375,12 @@ uv run python scripts/demo_repair_order.py invoices --ro-id "ro-001"
 # Support
 uv run python scripts/demo_support.py transport-types
 uv run python scripts/demo_support.py transport-type --id "t-001"
+
+# Appointments
+uv run python scripts/demo_appointment.py slots --shop-id "shop-001" --start "2024-01-26" --end "2024-01-31"
+uv run python scripts/demo_appointment.py search --vin "3GTU2NEC7HG502779"
+uv run python scripts/demo_appointment.py create --shop-id "shop-001" --timestamp 1644073200000 --customer '{...}' --vehicle '{...}'
+uv run python scripts/demo_appointment.py cancel --id "appt-001" --reason "Rescheduled"
 ```
 
 ---
@@ -394,7 +416,7 @@ except TekionError as e:
 uv run pytest -v
 ```
 
-92 tests covering all services — all HTTP calls mocked via `respx`, no network access required.
+93 tests covering all services — all HTTP calls mocked via `respx`, no network access required.
 
 ### Test Breakdown
 
@@ -409,7 +431,7 @@ uv run pytest -v
 | `tests/services/test_vehicle.py` | 10 | List, search, get, update, repair-orders |
 | `tests/services/test_repair_order.py` | 18 | All 14 RO endpoints |
 | `tests/services/test_support.py` | 3 | Transportation types |
-| `tests/services/test_appointment.py` | 6 | Search, get |
+| `tests/services/test_appointment.py` | 7 | Slots, search, create, update, cancel |
 
 ---
 
@@ -436,6 +458,7 @@ scripts/
   demo_vehicle.py        # Vehicle CLI
   demo_repair_order.py   # Repair Order CLI
   demo_support.py        # Support CLI
+  demo_appointment.py    # Appointment CLI
 tests/
   conftest.py            # Shared fixtures
   test_auth.py           # TokenManager tests
