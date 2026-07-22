@@ -1,0 +1,299 @@
+{
+  "info": {
+    "name": "Tekion APC API",
+    "description": "AutoAdvisor AI — Tekion Automotive Partner Cloud API collection for Customer operations.\n\n## Setup\n\n1. Create an Environment in Postman with these variables:\n   - `base_url`: `https://api-sandbox.tekioncloud.com/openapi` (or production URL)\n   - `app_id`: your Tekion app ID\n   - `secret_key`: your Tekion secret key\n   - `dealer_id`: `techmotors_4_0` (sandbox) or your dealer ID\n2. Start with **Get Token** to authenticate\n3. The token is auto-saved and used by all other requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://api-sandbox.tekioncloud.com/openapi",
+      "type": "string"
+    },
+    {
+      "key": "app_id",
+      "value": "your_app_id_here",
+      "type": "string"
+    },
+    {
+      "key": "secret_key",
+      "value": "your_secret_key_here",
+      "type": "string"
+    },
+    {
+      "key": "dealer_id",
+      "value": "techmotors_4_0",
+      "type": "string"
+    },
+    {
+      "key": "customer_id",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Auth",
+      "item": [
+        {
+          "name": "Get Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    var jsonData = pm.response.json();",
+                  "    var token = jsonData.data.access_token;",
+                  "    pm.collectionVariables.set('token', token);",
+                  "    console.log('Token saved:', token.substring(0, 20) + '...');",
+                  "} else {",
+                  "    console.log('Token request failed:', pm.response.status);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "app_id",
+                  "value": "{{app_id}}"
+                },
+                {
+                  "key": "secret_key",
+                  "value": "{{secret_key}}"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/public/tokens",
+              "host": ["{{base_url}}"],
+              "path": ["public", "tokens"]
+            },
+            "description": "Generate a bearer token. Token expires in ~24 hours. Rate-limited to 20 requests per 15 minutes.\n\nThe response includes:\n- `access_token`: JWT bearer token\n- `expire_in`: TTL in seconds (typically 86399 ≈ 24h)\n- `expire_on`: expiry as epoch timestamp\n\nThe response script auto-saves the token to the `token` collection variable."
+          }
+        }
+      ],
+      "description": "Authentication — generate and manage bearer tokens"
+    },
+    {
+      "name": "2. Customers",
+      "item": [
+        {
+          "name": "Search Customers",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "app_id",
+                "value": "{{app_id}}"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "dealer_id",
+                "value": "{{dealer_id}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/v4.0.0/customers?phone={{phone}}&search={{search}}&firstName={{first_name}}&lastName={{last_name}}&email={{email}}&customerType={{customer_type}}",
+              "host": ["{{base_url}}"],
+              "path": ["v4.0.0", "customers"],
+              "query": [
+                {
+                  "key": "phone",
+                  "value": "{{phone}}",
+                  "description": "Phone number to search (partial match)"
+                },
+                {
+                  "key": "search",
+                  "value": "{{search}}",
+                  "description": "General search — matches name, email, phone, arcId"
+                },
+                {
+                  "key": "firstName",
+                  "value": "{{first_name}}",
+                  "description": "First name filter"
+                },
+                {
+                  "key": "lastName",
+                  "value": "{{last_name}}",
+                  "description": "Last name filter"
+                },
+                {
+                  "key": "email",
+                  "value": "{{email}}",
+                  "description": "Email filter"
+                },
+                {
+                  "key": "customerType",
+                  "value": "{{customer_type}}",
+                  "description": "INDIVIDUAL or BUSINESS"
+                }
+              ]
+            },
+            "description": "**Tier: Premium**\n\nSearch customers by phone, name, email, or general search term. Returns matching customer records with linked vehicles.\n\nSupports cursor-based pagination via `nextFetchKey` in the response.",
+            "response": [
+              {
+                "name": "Search Results (example)",
+                "status": "OK",
+                "code": 200,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": "{\n  \"meta\": {\n    \"nextFetchKey\": null\n  },\n  \"data\": [\n    {\n      \"id\": \"0de752da-77d3-4450-bccd-55db58036bbc\",\n      \"displayId\": \"398081\",\n      \"vehicles\": [\n        {\n          \"vin\": \"1FTEW1E45KFA12349\",\n          \"year\": \"2024\",\n          \"make\": \"Ford\",\n          \"model\": \"F-150\",\n          \"vehicleId\": \"f55c0028-865e-49f8-a304-a546a7139147\",\n          \"last8DigitVIN\": \"KFA12349\"\n        }\n      ],\n      \"customerDetails\": {\n        \"name\": {\n          \"firstName\": \"John\",\n          \"lastName\": \"Doe\"\n        },\n        \"phoneCommunications\": [\n          {\n            \"phoneType\": \"MOBILE\",\n            \"phone\": {\n              \"completeNumber\": \"+15551234567\",\n              \"localNumber\": \"5551234567\"\n            }\n          }\n        ],\n        \"emailCommunications\": [\n          {\n            \"email\": \"john.doe@example.com\"\n          }\n        ],\n        \"customerType\": \"INDIVIDUAL\"\n      },\n      \"status\": \"ACTIVE\"\n    }\n  ]\n}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Get Customer by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "app_id",
+                "value": "{{app_id}}"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "dealer_id",
+                "value": "{{dealer_id}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/v4.0.0/customers/{{customer_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["v4.0.0", "customers", "{{customer_id}}"]
+            },
+            "description": "**Tier: Select**\n\nFetch a single customer by their Tekion customer ID (UUID). Returns the full customer bundle including vehicles, insurance policies, addresses, and communication preferences.\n\nUse the customer ID from search results.",
+            "response": [
+              {
+                "name": "Customer Found (example)",
+                "status": "OK",
+                "code": 200,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"id\": \"0de752da-77d3-4450-bccd-55db58036bbc\",\n    \"displayId\": \"398081\",\n    \"vehicles\": [\n      {\n        \"vin\": \"1FTEW1E45KFA12349\",\n        \"year\": \"2024\",\n        \"make\": \"Ford\",\n        \"model\": \"F-150\",\n        \"vehicleId\": \"f55c0028-865e-49f8-a304-a546a7139147\"\n      }\n    ],\n    \"customerDetails\": {\n      \"name\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\"\n      },\n      \"phoneCommunications\": [\n        {\n          \"phoneType\": \"MOBILE\",\n          \"phone\": {\n            \"completeNumber\": \"+15551234567\",\n            \"localNumber\": \"5551234567\"\n          }\n        }\n      ],\n      \"emailCommunications\": [\n        {\n          \"email\": \"john.doe@example.com\"\n        }\n      ],\n      \"customerType\": \"INDIVIDUAL\"\n    },\n    \"status\": \"ACTIVE\"\n  }\n}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Create Customer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "app_id",
+                "value": "{{app_id}}"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "dealer_id",
+                "value": "{{dealer_id}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"ACTIVE\",\n  \"customerDetails\": {\n    \"customerType\": \"INDIVIDUAL\",\n    \"phoneCommunications\": [\n      {\n        \"phoneType\": \"MOBILE\",\n        \"phone\": {\n          \"countryCode\": 1,\n          \"localNumber\": \"5551234567\"\n        },\n        \"usagePreference\": {\n          \"preferred\": true,\n          \"preferenceMapping\": {\n            \"MARKETING\": \"NO\",\n            \"TRANSACTION\": \"YES\"\n          }\n        }\n      }\n    ],\n    \"name\": {\n      \"firstName\": \"Jane\",\n      \"lastName\": \"Smith\"\n    }\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/v4.0.0/customers",
+              "host": ["{{base_url}}"],
+              "path": ["v4.0.0", "customers"]
+            },
+            "description": "**Tier: Open**\n\nCreate a new customer with minimal required fields. This is the minimal viable payload for voice-agent intake.\n\nRequired fields:\n- `name.firstName`\n- `name.lastName`\n- At least one `phoneCommunications` entry with `phone.localNumber`\n\nAll other fields (addresses, email, tax info, license, occupation) are optional.",
+            "response": [
+              {
+                "name": "Customer Created (example)",
+                "status": "Created",
+                "code": 201,
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": "{\n  \"data\": {\n    \"id\": \"a1b2c3d4-...\",\n    \"status\": \"ACTIVE\",\n    \"displayId\": \"999999\",\n    \"customerDetails\": {\n      \"customerType\": \"INDIVIDUAL\",\n      \"name\": {\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Smith\"\n      },\n      \"phoneCommunications\": [\n        {\n          \"phoneType\": \"MOBILE\",\n          \"phone\": {\n            \"countryCode\": 1,\n            \"localNumber\": \"5551234567\"\n          }\n        }\n      ]\n    },\n    \"creationTime\": 1784113354451\n  }\n}"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Update Customer",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "app_id",
+                "value": "{{app_id}}"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "dealer_id",
+                "value": "{{dealer_id}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"ACTIVE\",\n  \"customerDetails\": {\n    \"customerType\": \"INDIVIDUAL\",\n    \"phoneCommunications\": [\n      {\n        \"phoneType\": \"MOBILE\",\n        \"phone\": {\n          \"countryCode\": 1,\n          \"localNumber\": \"5559999999\"\n        },\n        \"usagePreference\": {\n          \"preferred\": true,\n          \"preferenceMapping\": {\n            \"MARKETING\": \"NO\",\n            \"TRANSACTION\": \"YES\"\n          }\n        }\n      }\n    ],\n    \"name\": {\n      \"firstName\": \"Janet\",\n      \"lastName\": \"Smith\"\n    }\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/v4.0.0/customers/{{customer_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["v4.0.0", "customers", "{{customer_id}}"]
+            },
+            "description": "**Tier: Open**\n\nUpdate an existing customer. The full customer details object is sent (not a partial update). Set `customer_id` collection variable to the target customer's UUID.\n\nTip: First GET the customer, modify the fields you want to change, then PUT the modified payload back."
+          }
+        }
+      ],
+      "description": "Customer operations — search, get, create, and update"
+    }
+  ]
+}
