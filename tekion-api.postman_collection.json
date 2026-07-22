@@ -1,169 +1,85 @@
 {
   "info": {
-    "name": "Tekion APC API",
-    "description": "AutoAdvisor AI — Tekion Automotive Partner Cloud API collection for Customer operations.\n\n## Setup\n\n1. Create an Environment in Postman with these variables:\n   - `base_url`: `https://api-sandbox.tekioncloud.com/openapi` (or production URL)\n   - `app_id`: your Tekion app ID\n   - `secret_key`: your Tekion secret key\n   - `dealer_id`: `techmotors_4_0` (sandbox) or your dealer ID\n2. Start with **Get Token** to authenticate\n3. The token is auto-saved and used by all other requests",
+    "name": "Tekion APC API — AutoAdvisor AI",
+    "description": "AutoAdvisor AI — Complete Tekion Automotive Partner Cloud API collection.\n\n## Setup\n\n1. Create an Environment in Postman with these variables:\n   - `base_url`: `https://api-sandbox.tekioncloud.com/openapi`\n   - `app_id`: your Tekion app ID\n   - `secret_key`: your Tekion secret key\n   - `dealer_id`: `techmotors_4_0` (sandbox)\n2. Start with **Auth → Get Token** to authenticate\n3. The token is auto-saved to `{{token}}` and used by all other requests",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
-    {
-      "key": "base_url",
-      "value": "https://api-sandbox.tekioncloud.com/openapi",
-      "type": "string"
-    },
-    {
-      "key": "app_id",
-      "value": "your_app_id_here",
-      "type": "string"
-    },
-    {
-      "key": "secret_key",
-      "value": "your_secret_key_here",
-      "type": "string"
-    },
-    {
-      "key": "dealer_id",
-      "value": "techmotors_4_0",
-      "type": "string"
-    },
-    {
-      "key": "customer_id",
-      "value": "",
-      "type": "string"
-    }
+    { "key": "base_url", "value": "https://api-sandbox.tekioncloud.com/openapi", "type": "string" },
+    { "key": "app_id", "value": "your_app_id_here", "type": "string" },
+    { "key": "secret_key", "value": "your_secret_key_here", "type": "string" },
+    { "key": "dealer_id", "value": "techmotors_4_0", "type": "string" },
+    { "key": "customer_id", "value": "", "type": "string" },
+    { "key": "vehicle_id", "value": "", "type": "string" },
+    { "key": "ro_id", "value": "", "type": "string" },
+    { "key": "rc_id", "value": "", "type": "string" },
+    { "key": "appointment_id", "value": "", "type": "string" },
+    { "key": "transport_id", "value": "", "type": "string" }
   ],
   "item": [
     {
       "name": "1. Auth",
-      "item": [
-        {
-          "name": "Get Token",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "exec": [
-                  "if (pm.response.code === 200) {",
-                  "    var jsonData = pm.response.json();",
-                  "    var token = jsonData.data.access_token;",
-                  "    pm.collectionVariables.set('token', token);",
-                  "    console.log('Token saved:', token.substring(0, 20) + '...');",
-                  "} else {",
-                  "    console.log('Token request failed:', pm.response.status);",
-                  "}"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/x-www-form-urlencoded"
-              }
+      "description": "Authentication — generate and manage bearer tokens",
+      "item": [{
+        "name": "Get Token",
+        "event": [{
+          "listen": "test",
+          "script": {
+            "exec": [
+              "if (pm.response.code === 200) {",
+              "    var jsonData = pm.response.json();",
+              "    var token = jsonData.data.access_token;",
+              "    pm.collectionVariables.set('token', token);",
+              "    console.log('Token saved:', token.substring(0, 20) + '...');",
+              "} else {",
+              "    console.log('Token request failed:', pm.response.status);",
+              "}"
             ],
-            "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "app_id",
-                  "value": "{{app_id}}"
-                },
-                {
-                  "key": "secret_key",
-                  "value": "{{secret_key}}"
-                }
-              ]
-            },
-            "url": {
-              "raw": "{{base_url}}/public/tokens",
-              "host": ["{{base_url}}"],
-              "path": ["public", "tokens"]
-            },
-            "description": "Generate a bearer token. Token expires in ~24 hours. Rate-limited to 20 requests per 15 minutes.\n\nThe response includes:\n- `access_token`: JWT bearer token\n- `expire_in`: TTL in seconds (typically 86399 ≈ 24h)\n- `expire_on`: expiry as epoch timestamp\n\nThe response script auto-saves the token to the `token` collection variable."
+            "type": "text/javascript"
           }
+        }],
+        "request": {
+          "method": "POST",
+          "header": [{ "key": "Content-Type", "value": "application/x-www-form-urlencoded" }],
+          "body": {
+            "mode": "urlencoded",
+            "urlencoded": [
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "secret_key", "value": "{{secret_key}}" }
+            ]
+          },
+          "url": { "raw": "{{base_url}}/public/tokens", "host": ["{{base_url}}"], "path": ["public", "tokens"] },
+          "description": "Generate a bearer token (expires ~24h). Rate-limited to 20 requests per 15 minutes."
         }
-      ],
-      "description": "Authentication — generate and manage bearer tokens"
+      }]
     },
     {
       "name": "2. Customers",
+      "description": "Customer operations — search, get, create, update",
       "item": [
         {
           "name": "Search Customers",
           "request": {
             "method": "GET",
             "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "key": "app_id",
-                "value": "{{app_id}}"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              },
-              {
-                "key": "dealer_id",
-                "value": "{{dealer_id}}"
-              }
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
             ],
             "url": {
               "raw": "{{base_url}}/v4.0.0/customers?phone={{phone}}&search={{search}}&firstName={{first_name}}&lastName={{last_name}}&email={{email}}&customerType={{customer_type}}",
-              "host": ["{{base_url}}"],
-              "path": ["v4.0.0", "customers"],
+              "host": ["{{base_url}}"], "path": ["v4.0.0", "customers"],
               "query": [
-                {
-                  "key": "phone",
-                  "value": "{{phone}}",
-                  "description": "Phone number to search (partial match)"
-                },
-                {
-                  "key": "search",
-                  "value": "{{search}}",
-                  "description": "General search — matches name, email, phone, arcId"
-                },
-                {
-                  "key": "firstName",
-                  "value": "{{first_name}}",
-                  "description": "First name filter"
-                },
-                {
-                  "key": "lastName",
-                  "value": "{{last_name}}",
-                  "description": "Last name filter"
-                },
-                {
-                  "key": "email",
-                  "value": "{{email}}",
-                  "description": "Email filter"
-                },
-                {
-                  "key": "customerType",
-                  "value": "{{customer_type}}",
-                  "description": "INDIVIDUAL or BUSINESS"
-                }
+                { "key": "phone", "value": "{{phone}}", "description": "Phone number (partial match)" },
+                { "key": "search", "value": "{{search}}", "description": "General search" },
+                { "key": "firstName", "value": "{{first_name}}", "description": "First name filter" },
+                { "key": "lastName", "value": "{{last_name}}", "description": "Last name filter" },
+                { "key": "email", "value": "{{email}}", "description": "Email filter" },
+                { "key": "customerType", "value": "{{customer_type}}", "description": "INDIVIDUAL or BUSINESS" }
               ]
             },
-            "description": "**Tier: Premium**\n\nSearch customers by phone, name, email, or general search term. Returns matching customer records with linked vehicles.\n\nSupports cursor-based pagination via `nextFetchKey` in the response.",
-            "response": [
-              {
-                "name": "Search Results (example)",
-                "status": "OK",
-                "code": 200,
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": "{\n  \"meta\": {\n    \"nextFetchKey\": null\n  },\n  \"data\": [\n    {\n      \"id\": \"0de752da-77d3-4450-bccd-55db58036bbc\",\n      \"displayId\": \"398081\",\n      \"vehicles\": [\n        {\n          \"vin\": \"1FTEW1E45KFA12349\",\n          \"year\": \"2024\",\n          \"make\": \"Ford\",\n          \"model\": \"F-150\",\n          \"vehicleId\": \"f55c0028-865e-49f8-a304-a546a7139147\",\n          \"last8DigitVIN\": \"KFA12349\"\n        }\n      ],\n      \"customerDetails\": {\n        \"name\": {\n          \"firstName\": \"John\",\n          \"lastName\": \"Doe\"\n        },\n        \"phoneCommunications\": [\n          {\n            \"phoneType\": \"MOBILE\",\n            \"phone\": {\n              \"completeNumber\": \"+15551234567\",\n              \"localNumber\": \"5551234567\"\n            }\n          }\n        ],\n        \"emailCommunications\": [\n          {\n            \"email\": \"john.doe@example.com\"\n          }\n        ],\n        \"customerType\": \"INDIVIDUAL\"\n      },\n      \"status\": \"ACTIVE\"\n    }\n  ]\n}"
-              }
-            ]
+            "description": "**Tier: Premium**\n\nSearch customers by phone, name, email, or general term. Returns matching records with linked vehicles."
           }
         },
         {
@@ -171,43 +87,13 @@
           "request": {
             "method": "GET",
             "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "key": "app_id",
-                "value": "{{app_id}}"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              },
-              {
-                "key": "dealer_id",
-                "value": "{{dealer_id}}"
-              }
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
             ],
-            "url": {
-              "raw": "{{base_url}}/v4.0.0/customers/{{customer_id}}",
-              "host": ["{{base_url}}"],
-              "path": ["v4.0.0", "customers", "{{customer_id}}"]
-            },
-            "description": "**Tier: Select**\n\nFetch a single customer by their Tekion customer ID (UUID). Returns the full customer bundle including vehicles, insurance policies, addresses, and communication preferences.\n\nUse the customer ID from search results.",
-            "response": [
-              {
-                "name": "Customer Found (example)",
-                "status": "OK",
-                "code": 200,
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": "{\n  \"data\": {\n    \"id\": \"0de752da-77d3-4450-bccd-55db58036bbc\",\n    \"displayId\": \"398081\",\n    \"vehicles\": [\n      {\n        \"vin\": \"1FTEW1E45KFA12349\",\n        \"year\": \"2024\",\n        \"make\": \"Ford\",\n        \"model\": \"F-150\",\n        \"vehicleId\": \"f55c0028-865e-49f8-a304-a546a7139147\"\n      }\n    ],\n    \"customerDetails\": {\n      \"name\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\"\n      },\n      \"phoneCommunications\": [\n        {\n          \"phoneType\": \"MOBILE\",\n          \"phone\": {\n            \"completeNumber\": \"+15551234567\",\n            \"localNumber\": \"5551234567\"\n          }\n        }\n      ],\n      \"emailCommunications\": [\n        {\n          \"email\": \"john.doe@example.com\"\n        }\n      ],\n      \"customerType\": \"INDIVIDUAL\"\n    },\n    \"status\": \"ACTIVE\"\n  }\n}"
-              }
-            ]
+            "url": { "raw": "{{base_url}}/v4.0.0/customers/{{customer_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "customers", "{{customer_id}}"] },
+            "description": "**Tier: Select**\n\nFetch a single customer with full bundle including vehicles, insurance, addresses, and communication preferences."
           }
         },
         {
@@ -215,47 +101,17 @@
           "request": {
             "method": "POST",
             "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "key": "app_id",
-                "value": "{{app_id}}"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              },
-              {
-                "key": "dealer_id",
-                "value": "{{dealer_id}}"
-              }
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"status\": \"ACTIVE\",\n  \"customerDetails\": {\n    \"customerType\": \"INDIVIDUAL\",\n    \"phoneCommunications\": [\n      {\n        \"phoneType\": \"MOBILE\",\n        \"phone\": {\n          \"countryCode\": 1,\n          \"localNumber\": \"5551234567\"\n        },\n        \"usagePreference\": {\n          \"preferred\": true,\n          \"preferenceMapping\": {\n            \"MARKETING\": \"NO\",\n            \"TRANSACTION\": \"YES\"\n          }\n        }\n      }\n    ],\n    \"name\": {\n      \"firstName\": \"Jane\",\n      \"lastName\": \"Smith\"\n    }\n  }\n}"
+              "raw": "{\n  \"status\": \"ACTIVE\",\n  \"customerDetails\": {\n    \"customerType\": \"INDIVIDUAL\",\n    \"phoneCommunications\": [\n      {\n        \"phoneType\": \"MOBILE\",\n        \"phone\": { \"countryCode\": 1, \"localNumber\": \"5551234567\" },\n        \"usagePreference\": {\n          \"preferred\": true,\n          \"preferenceMapping\": { \"MARKETING\": \"NO\", \"TRANSACTION\": \"YES\" }\n        }\n      }\n    ],\n    \"name\": { \"firstName\": \"Jane\", \"lastName\": \"Smith\" }\n  }\n}"
             },
-            "url": {
-              "raw": "{{base_url}}/v4.0.0/customers",
-              "host": ["{{base_url}}"],
-              "path": ["v4.0.0", "customers"]
-            },
-            "description": "**Tier: Open**\n\nCreate a new customer with minimal required fields. This is the minimal viable payload for voice-agent intake.\n\nRequired fields:\n- `name.firstName`\n- `name.lastName`\n- At least one `phoneCommunications` entry with `phone.localNumber`\n\nAll other fields (addresses, email, tax info, license, occupation) are optional.",
-            "response": [
-              {
-                "name": "Customer Created (example)",
-                "status": "Created",
-                "code": 201,
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json"
-                  }
-                ],
-                "body": "{\n  \"data\": {\n    \"id\": \"a1b2c3d4-...\",\n    \"status\": \"ACTIVE\",\n    \"displayId\": \"999999\",\n    \"customerDetails\": {\n      \"customerType\": \"INDIVIDUAL\",\n      \"name\": {\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Smith\"\n      },\n      \"phoneCommunications\": [\n        {\n          \"phoneType\": \"MOBILE\",\n          \"phone\": {\n            \"countryCode\": 1,\n            \"localNumber\": \"5551234567\"\n          }\n        }\n      ]\n    },\n    \"creationTime\": 1784113354451\n  }\n}"
-              }
-            ]
+            "url": { "raw": "{{base_url}}/v4.0.0/customers", "host": ["{{base_url}}"], "path": ["v4.0.0", "customers"] },
+            "description": "**Tier: Open**\n\nCreate a new customer. Required: firstName, lastName, and at least one phoneCommunications entry."
           }
         },
         {
@@ -263,37 +119,317 @@
           "request": {
             "method": "PUT",
             "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              },
-              {
-                "key": "app_id",
-                "value": "{{app_id}}"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}"
-              },
-              {
-                "key": "dealer_id",
-                "value": "{{dealer_id}}"
-              }
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"status\": \"ACTIVE\",\n  \"customerDetails\": {\n    \"customerType\": \"INDIVIDUAL\",\n    \"phoneCommunications\": [\n      {\n        \"phoneType\": \"MOBILE\",\n        \"phone\": {\n          \"countryCode\": 1,\n          \"localNumber\": \"5559999999\"\n        },\n        \"usagePreference\": {\n          \"preferred\": true,\n          \"preferenceMapping\": {\n            \"MARKETING\": \"NO\",\n            \"TRANSACTION\": \"YES\"\n          }\n        }\n      }\n    ],\n    \"name\": {\n      \"firstName\": \"Janet\",\n      \"lastName\": \"Smith\"\n    }\n  }\n}"
+              "raw": "{\n  \"status\": \"ACTIVE\",\n  \"customerDetails\": {\n    \"customerType\": \"INDIVIDUAL\",\n    \"phoneCommunications\": [\n      {\n        \"phoneType\": \"MOBILE\",\n        \"phone\": { \"countryCode\": 1, \"localNumber\": \"5559999999\" },\n        \"usagePreference\": {\n          \"preferred\": true,\n          \"preferenceMapping\": { \"MARKETING\": \"NO\", \"TRANSACTION\": \"YES\" }\n        }\n      }\n    ],\n    \"name\": { \"firstName\": \"Janet\", \"lastName\": \"Smith\" }\n  }\n}"
             },
-            "url": {
-              "raw": "{{base_url}}/v4.0.0/customers/{{customer_id}}",
-              "host": ["{{base_url}}"],
-              "path": ["v4.0.0", "customers", "{{customer_id}}"]
-            },
-            "description": "**Tier: Open**\n\nUpdate an existing customer. The full customer details object is sent (not a partial update). Set `customer_id` collection variable to the target customer's UUID.\n\nTip: First GET the customer, modify the fields you want to change, then PUT the modified payload back."
+            "url": { "raw": "{{base_url}}/v4.0.0/customers/{{customer_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "customers", "{{customer_id}}"] },
+            "description": "**Tier: Open**\n\nUpdate an existing customer. Full replacement — GET first, modify, then PUT back."
           }
         }
-      ],
-      "description": "Customer operations — search, get, create, and update"
+      ]
+    },
+    {
+      "name": "3. Vehicle Inventory",
+      "description": "Vehicle inventory operations — list, search, get, update, repair orders",
+      "item": [
+        {
+          "name": "List Vehicles",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": {
+              "raw": "{{base_url}}/v4.0.0/vehicle-inventory?vin={{vin}}&make={{make}}&model={{model}}&year={{year}}&status={{status}}&nextPageToken={{page_token}}",
+              "host": ["{{base_url}}"], "path": ["v4.0.0", "vehicle-inventory"],
+              "query": [
+                { "key": "vin", "value": "{{vin}}", "description": "VIN filter" },
+                { "key": "make", "value": "{{make}}", "description": "Make filter" },
+                { "key": "model", "value": "{{model}}", "description": "Model filter" },
+                { "key": "year", "value": "{{year}}", "description": "Year filter" },
+                { "key": "status", "value": "{{status}}", "description": "Status (STOCKED_IN, SOLD, etc.)" },
+                { "key": "nextPageToken", "value": "{{page_token}}", "description": "Pagination token" }
+              ]
+            },
+            "description": "**Tier: Open**\n\nFetch vehicles with optional filters. Supports cursor-based pagination via nextPageToken."
+          }
+        },
+        {
+          "name": "Search Vehicle Inventory",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"pageSize\": 20,\n  \"filters\": [\n    {\n      \"operator\": \"EQ\",\n      \"field\": \"vin\",\n      \"values\": [\"1FTEW1E45KFA12349\"]\n    }\n  ]\n}"
+            },
+            "url": { "raw": "{{base_url}}/v4.0.0/vehicle-inventory:search", "host": ["{{base_url}}"], "path": ["v4.0.0", "vehicle-inventory:search"] },
+            "description": "**Tier: Open**\n\nAdvanced search with operators (EQ, IN, BTW, GT, etc.), boolean logic (AND/OR), sorting, and pagination."
+          }
+        },
+        {
+          "name": "Get Vehicle by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/vehicle-inventory/{{vehicle_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "vehicle-inventory", "{{vehicle_id}}"] },
+            "description": "**Tier: Open**\n\nGet full vehicle detail by inventory ID."
+          }
+        },
+        {
+          "name": "Get Repair Orders for Vehicle",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/vehicle-inventory/{{vehicle_id}}/repair-orders", "host": ["{{base_url}}"], "path": ["v4.0.0", "vehicle-inventory", "{{vehicle_id}}", "repair-orders"] },
+            "description": "**Tier: Premium**\n\nFetch all repair order IDs linked to a vehicle."
+          }
+        }
+      ]
+    },
+    {
+      "name": "4. Repair Orders",
+      "description": "Repair order operations — search, get, create, jobs, operations, parts, invoices, status",
+      "item": [
+        {
+          "name": "Search Repair Orders",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"filters\": [\n    { \"field\": \"documentNumber\", \"operator\": \"IN\", \"values\": [\"5142\"] }\n  ],\n  \"pageSize\": 25\n}"
+            },
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders:search", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders:search"] },
+            "description": "**Tier: Premium**\n\nSearch repair orders using filters, pagination, and sorting."
+          }
+        },
+        {
+          "name": "Get Repair Order",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders/{{ro_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders", "{{ro_id}}"] },
+            "description": "**Tier: Select**\n\nGet repair order details by ID."
+          }
+        },
+        {
+          "name": "Get RO Customer",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders/{{ro_id}}/ro-customers/{{rc_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders", "{{ro_id}}", "ro-customers", "{{rc_id}}"] },
+            "description": "**Tier: Select**\n\nGet customer details associated with a repair order."
+          }
+        },
+        {
+          "name": "Get RO Vehicle",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders/{{ro_id}}/ro-vehicle", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders", "{{ro_id}}", "ro-vehicle"] },
+            "description": "**Tier: Select**\n\nGet vehicle details associated with a repair order."
+          }
+        },
+        {
+          "name": "Get RO Jobs",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders/{{ro_id}}/jobs", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders", "{{ro_id}}", "jobs"] },
+            "description": "**Tier: Select**\n\nGet all jobs in a repair order."
+          }
+        },
+        {
+          "name": "Create Repair Order",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tagNumber\": \"12345\",\n  \"billingCustomerId\": \"{{customer_id}}\",\n  \"primaryCustomerId\": \"{{customer_id}}\",\n  \"vehicle\": {\n    \"vin\": \"5J8YD8H87RL004205\",\n    \"mileageIn\": 12345,\n    \"licensePlate\": \"TT-123-TT\"\n  }\n}"
+            },
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders"] },
+            "description": "**Tier: Select**\n\nCreate a new repair order for a customer and vehicle."
+          }
+        },
+        {
+          "name": "Create RO from Appointment",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tagNumber\": \"6254324\",\n  \"appointmentId\": \"{{appointment_id}}\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders:appointment-to-ro", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders:appointment-to-ro"] },
+            "description": "**Tier: Select**\n\nConvert a valid appointment into a repair order."
+          }
+        },
+        {
+          "name": "Get RO Invoices",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders/{{ro_id}}/ro-invoices", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders", "{{ro_id}}", "ro-invoices"] },
+            "description": "**Tier: Premium**\n\nGet all invoices generated for a repair order."
+          }
+        },
+        {
+          "name": "Update RO Status",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"reason\": \"Not required anymore\",\n  \"status\": \"VOID\"\n}"
+            },
+            "url": { "raw": "{{base_url}}/v4.0.0/repair-orders/{{ro_id}}:status", "host": ["{{base_url}}"], "path": ["v4.0.0", "repair-orders", "{{ro_id}}:status"] },
+            "description": "**Tier: Premium**\n\nUpdate repair order status. Currently limited to marking as 'VOID'."
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Support",
+      "description": "Support operations — transportation types",
+      "item": [
+        {
+          "name": "Get Transportation Types",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/transportation-types", "host": ["{{base_url}}"], "path": ["v4.0.0", "transportation-types"] },
+            "description": "**Tier: Select**\n\nGet all transportation types (loaner, shuttle, etc.) defined in the dealership."
+          }
+        },
+        {
+          "name": "Get Transportation Type by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/transportation-types/{{transport_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "transportation-types", "{{transport_id}}"] },
+            "description": "**Tier: Select**\n\nGet a single transportation type by ID."
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. Service Appointments",
+      "description": "Service appointment operations — search and get",
+      "item": [
+        {
+          "name": "Search Appointments",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"filters\": [\n    { \"field\": \"status\", \"operator\": \"IN\", \"values\": [\"NEW\", \"IN_PROGRESS\"] },\n    { \"field\": \"appointmentDateTime\", \"operator\": \"BTW\", \"values\": [1768300800000, 1768905600000] }\n  ],\n  \"sort\": [\n    { \"field\": \"appointmentDateTime\", \"order\": \"DESC\" }\n  ],\n  \"pageSize\": 25\n}"
+            },
+            "url": { "raw": "{{base_url}}/v4.0.0/service-appointments:search", "host": ["{{base_url}}"], "path": ["v4.0.0", "service-appointments:search"] },
+            "description": "**Tier: Premium**\n\nSearch appointments with filters (status, shop, date range), text search, sorting, and pagination."
+          }
+        },
+        {
+          "name": "Get Appointment by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "app_id", "value": "{{app_id}}" },
+              { "key": "Authorization", "value": "Bearer {{token}}" },
+              { "key": "dealer_id", "value": "{{dealer_id}}" }
+            ],
+            "url": { "raw": "{{base_url}}/v4.0.0/service-appointments/{{appointment_id}}", "host": ["{{base_url}}"], "path": ["v4.0.0", "service-appointments", "{{appointment_id}}"] },
+            "description": "**Tier: Premium**\n\nGet appointment details by ID."
+          }
+        }
+      ]
     }
   ]
 }
